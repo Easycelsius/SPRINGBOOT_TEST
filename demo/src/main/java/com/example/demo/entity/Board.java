@@ -7,8 +7,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import org.elasticsearch.common.inject.PrivateBinder;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -24,7 +22,7 @@ public class Board {
 
     @Id // Primary Key에 해당하는 특정 필드를 id로 지정
     @GeneratedValue(strategy = GenerationType.IDENTITY) // ID값 자동으로 지정
-    private Long boardNo;
+    private Long board_no;
 
     // Column으로 사용하지 않는 필드의 경우 @Transient 어노테이션을 적용
 
@@ -32,7 +30,7 @@ public class Board {
     private String title;
     
     @Column(length = 20, nullable = true)
-    private String name;
+    private String writer;
     
     @Column(length = 4000, nullable = true)
     private String content;

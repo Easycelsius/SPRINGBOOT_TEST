@@ -47,12 +47,12 @@
 			</tr>
 			<c:forEach items="${boardList }" var="board">
 				<tr>
-					<td>${board.seq }</td>
-					<td align="left"><a href="getBoard.do?seq=${board.seq }&title=${board.title }&content=${board.content }&cnt=${board.cnt}">
+					<td>${board.board_no }</td>
+					<td align="left"><a href="getBoard.do?boardNo=${board.board_no }&title=${board.title }&content=${board.content }">
 							${board.title }</a></td>
 					<td>${board.writer }</td>
-					<td><fmt:formatDate value="${board.regDate }" pattern="yyyy-MM-dd"/></td>
-					<td>${board.cnt }</td>
+					<%--<!-- <td><fmt:formatDate value="${board.regDate }" pattern="yyyy-MM-dd"/></td> -->
+					<!-- <td>${board.cnt }</td> --> --%>
 				</tr>
 			</c:forEach>
 		</table>

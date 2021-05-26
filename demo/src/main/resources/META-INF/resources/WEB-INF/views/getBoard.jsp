@@ -40,14 +40,14 @@
 					<td bgcolor="orange">내용</td>
 					<td align="left"><textarea name="content" cols="40" rows="10">${board.content }</textarea></td>
 				</tr>
-				<tr>
+				<!-- <tr>
 					<td bgcolor="orange">등록일</td>
 					<td align="left">${board.regDate }</td>
 				</tr>
 				<tr>
 					<td bgcolor="orange">조회수</td>
 					<td align="left">${board.cnt }</td>
-				</tr>
+				</tr> -->
 				<tr>
 					<td colspan="2" align="center"><input type="submit"
 						value="글 수정" /></td>
